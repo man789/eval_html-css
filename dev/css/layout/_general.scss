@@ -1,5 +1,6 @@
 body{
     font-family: $main-font;
+    color: $text-color;
 }
 .wrapper{
     width: 1140px;
@@ -30,25 +31,10 @@ a{
     font-size: 0.9em;
     font-weight: 300;
     text-align: center;
-    color: $text-color;
+    color: $text-color-grey;
 }
-.btn-yellow{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 10px 25px;
-    background-color: $yellow;
-    font-size: 0.8em;
-    transition: .3s all ease-in-out;
-    &:hover{
-        background-color: $text-color;
-    }
-}
-.btn-popular{
-    color: $text-color;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 10px 25px;
-    background-color: $yellow;
-    font-size: 0.8em;
+
+// Space between section 
+section{
+    padding: 5% 0;
 }

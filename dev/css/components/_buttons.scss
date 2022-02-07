@@ -1,0 +1,57 @@
+.btn-yellow{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 25px;
+    background-color: $yellow;
+    font-size: 0.8em;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $text-color;
+    }
+}
+.btn-popular{
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 25px;
+    background-color: $yellow;
+    font-size: 0.8em;
+}
+.btn-pack{
+    color: $text-color;
+    background-color: $grey-section;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $yellow;
+        color: white;
+    }
+}
+.btn-black{
+    background-color: $text-color;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $yellow;
+    }
+}
+.btn-blog{
+    font-size: 0.8em;
+    border: 1px solid $grey-section;
+    color: $text-color;
+    padding: 5px 15px;
+    background-color: transparent;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $yellow;
+        border-color: $yellow;
+        color: white;
+    }
+}
