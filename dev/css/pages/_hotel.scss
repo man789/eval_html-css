@@ -1,0 +1,90 @@
+.hotel-page .main{
+    background-color: $grey-section;
+}
+.hotel-page .main .ask{
+    background-color: white;
+}
+.hotel-box{
+    display: grid;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6"
+    ;
+    gap: 2rem;
+    margin-top: 5%;
+    img{
+        display: block;
+    }
+}
+.hotel-box1{
+    grid-area: box1;
+    background-color: white;
+}
+.hotel-box2{
+    grid-area: box2;
+    background-color: white;
+}
+.hotel-box3{
+    grid-area: box3;
+    background-color: white;
+}
+.hotel-box4{
+    grid-area: box4;
+    background-color: white;
+}
+.hotel-box5{
+    grid-area: box5;
+    background-color: white;
+}
+.hotel-box6{
+    grid-area: box6;
+    background-color: white;
+}
+.hotel-box-content{
+    padding: 0 5% 5% 5%;
+    p{
+        font-size: 0.8em;
+        font-weight: 300;
+        color: $text-color-grey;
+    }
+    > p{
+        margin:0 0 8% 0;
+    }
+    > div:nth-of-type(1){
+        display: flex;
+        align-items: center;
+        p{
+            margin-right: auto;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: $text-color;
+        }
+    }
+    > div:nth-of-type(2){
+        div{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgray; 
+            margin-bottom: 2%;
+        }
+        div:last-of-type{
+            border: none;
+        }
+        p{
+            margin-right: auto;
+        }
+        span{
+            font-size: 0.8em;
+            font-weight: 300;
+            color: $text-color-grey;
+        }
+        .btn-popular{
+            color: $text-color;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}
+.hotel-box1:hover, .hotel-box2:hover, .hotel-box3:hover, .hotel-box4:hover, .hotel-box5:hover, .hotel-box6:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

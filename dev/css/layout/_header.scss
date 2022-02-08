@@ -28,3 +28,34 @@
         margin: 2% 0 2% 0;
     }
 }
+
+.contact-page .header{
+    background: url('../img/hero-contact.jpg') center/cover;
+    height: 40vh;
+}
+.hotel-page .header{
+    background: url('../img/hero-hotels.jpg') center/cover;
+    height: 40vh;
+}
+.blog-page .header{
+    background: url('../img/hero-blog.jpg') center/cover;
+    height: 40vh;
+}
+
+
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+    a{
+        color: white;
+        font-size: 0.9em;
+        font-weight: 300;
+        transition: .3s all ease-in-out;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    i{
+        margin: 0 1%;
+    }
+}

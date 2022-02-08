@@ -55,3 +55,17 @@
         color: white;
     }
 }
+.btn-form{
+    font-size: 0.8em;
+    border: 1px solid $yellow;
+    color: white;
+    padding: 5px 15px;
+    background-color: $yellow;
+    text-transform: uppercase;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: white;
+        border-color: $yellow;
+        color: $text-color;
+    }
+}

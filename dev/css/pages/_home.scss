@@ -182,11 +182,12 @@
 .ask{
     display: flex;
     flex-wrap: nowrap;
-    height: 50vh;
+    height: 60vh;
     padding: 0;
     div:first-of-type{
         width: 50%;
         padding-left: 10%;
+        padding-top: 5%;
         h2{
             text-align: initial;
         }
