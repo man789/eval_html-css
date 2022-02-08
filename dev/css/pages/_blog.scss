@@ -10,6 +10,12 @@
 }
 .blog-content{
     margin: 5% 0;
+    width: 70%;
+    > div:nth-of-type(1){
+        img{
+            width: 100%;
+        }
+    }
     > div:nth-of-type(2){
         display: flex;
     }
@@ -59,17 +65,331 @@
         margin-top: 0;
     }
 }
-
-
-
-
-
-
-
-
-
+.blog-text-bg-white{
+    background-color: white;
+    padding: 3% 5%;
+    font-size: 0.9em;
+    line-height: 24px;
+    font-weight: 300;
+    color: $text-color-grey;
+}
+.blog-img-block{
+    margin-top: 5%;
+    display: flex;
+    gap: 2rem;
+    img{
+        width: 100%;
+    }
+}
+.blog-content > p{
+    font-size: 0.9em;
+    line-height: 22px;
+    font-weight: 300;
+    color: $text-color-grey;
+}
+.blog-post{
+    display: flex;
+    border-top: 1px solid lightgray;
+    margin-top: 10%;
+    padding-top: 2%;
+}
+.blog-post-prev, .blog-post-next{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    div:nth-of-type(1){
+        width: 25%;
+    }
+    div:nth-of-type(2){
+        width: 75%;
+        p{
+            font-size: 0.9em;
+            font-weight: 300;
+            color: $text-color-grey;
+        }
+        a{
+            font-size: 1.2em;
+            font-weight: 600;
+            color: $text-color;
+            transition: .3s all ease-in-out;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+.blog-post-next{
+    div:nth-of-type(1){
+        order: 2;
+        img{
+            margin-left: auto;
+        }
+    }
+    div:nth-of-type(2){
+        p, a{
+            display: block;
+            text-align: right;
+        }
+    }
+}
+.blog-comments{
+    margin-top: 5%;
+    border: 1px solid lightgray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    > p{
+        text-align: center;
+    }
+}
+.blog-comments1{
+    display: flex;
+    margin-bottom: 5%;
+    div:nth-of-type(1){
+        width: 15%;
+        img{
+            margin-left: 20%;
+        }
+    }
+    div:nth-of-type(2){
+        width: 70%;
+        p:nth-of-type(1){
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: $text-color;
+        }
+        p:nth-of-type(2){
+            font-size: 0.9em;
+            font-weight: 300;
+            color: $text-color-grey;
+        }
+        p:nth-of-type(3){
+            font-weight: 300;
+            color: $text-color;
+        }
+    }
+    div:nth-of-type(3){
+        width: 15%;
+    }
+}
+.fix-comments{
+    div:nth-of-type(1){
+        width: 15%;
+        img{
+            margin-left: 30%;
+        }
+    }
+}
+.blog-form{
+    padding: 5% 3%;
+    margin: 5% 0;
+    border: 1px solid lightgray;
+    > p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.1em;
+        margin-bottom: 5%;
+    }
+}
+.blog-form-content{
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        div:nth-of-type(1){
+            width: 50%;
+            padding: 1%;
+        }
+        div:nth-of-type(2){
+            width: 50%;
+            padding: 1%;
+        }
+        div:nth-of-type(3){
+            width: 100%;
+            padding: 1%;
+        }
+        div:nth-of-type(4){
+            width: 100%;
+            padding: 1%;
+        }
+        div:nth-of-type(5){
+            padding: 1%;
+            margin: 0 auto;
+        }
+        input, textarea{
+            padding: 15px 15px;
+            margin: 0 auto 10px auto;
+            width: 100%;
+            background-color: white;
+            color: lightgray;
+            font-size: 0.9em;
+            border: none;
+        }
+        button{
+            cursor: pointer;
+        }
+    }
+}
+// 1 ASIDE EN FLEX C B1
 .aside{
     margin: 5% 0;
     border: 1px solid lightgray;
     padding: 3%;
+    width: 30%;
+    height: fit-content;
+    a{
+        color: $text-color;
+        transition: .3s all ease-in-out;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+.aside-search-box{
+    form{
+        display: flex;
+        input{
+            border: none;
+            background-color: $yellow;
+            padding: 10px 20px;
+            width: 80%;
+            color: white;
+            border-radius: 25px 0 0 25px;
+        }
+        button{
+            border: none;
+            padding: 10px 15px;
+            width: 20%;
+            background-color: $yellow;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            i{
+                color: white;
+            }
+        }
+    }
+}
+.aside-people{
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    > div:nth-of-type(1){
+        img{
+            margin: 0 auto;
+        }
+    }
+    > p:nth-of-type(1){
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    > p:nth-of-type(2), > p:nth-of-type(3){
+        font-weight: 300;
+        font-size: 0.9em;
+        line-height: 24px;
+    }
+    > div:nth-of-type(2){
+        a{
+            margin: 0 10px;
+        }
+    }
+}
+.aside-title{
+    background-color: $yellow;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    p{
+        padding: 5% 0;
+    }
+}
+.aside-post1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    div:nth-of-type(1){
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+    div:nth-of-type(2){
+        width: 70%;
+        a{
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        p{
+            font-size: 0.8em;
+            font-weight: 300;
+            margin-left: 10px;
+        }
+    }
+}
+.aside-ads{
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+.aside-categories{
+    > div{
+        div{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dotted lightgray;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            a{
+                margin-right: auto;
+                font-weight: 300;
+                font-size: 0.9em;
+                color: $text-color;
+            }
+            span{
+                font-weight: 300;
+                font-size: 0.9em;
+                color: $text-color;
+            }
+        }
+    }
+}
+.aside-newsletter{
+    p{
+        font-weight: 300;
+        font-size: 0.9em;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+.aside-mail-box{
+    form{
+        display: flex;
+        input{
+            border: none;
+            padding: 10px 20px;
+            width: 60%;
+            color: $text-color;
+            font-weight: 300;
+            &::placeholder{
+                font-family:FontAwesome;
+            }
+        }
+        button{
+            border: none;
+            padding: 10px 15px;
+            width: 40%;
+            color: white;
+            background-color: $yellow;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+    }
 }

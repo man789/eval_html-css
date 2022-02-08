@@ -69,3 +69,33 @@
         color: $text-color;
     }
 }
+.btn-comments{
+    font-size: 0.8em;
+    border: 1px solid $grey-section;
+    color: $text-color;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: white;
+    transition: .3s all ease-in-out;
+    &:hover{
+        background-color: $yellow;
+        border-color: $yellow;
+        color: white;
+    }
+}
+.btn-aside{
+    font-size: 0.8em;
+    border: 1px solid lightgray;
+    color: $text-color;
+    padding: 5px 15px;
+    margin: 5px 0;
+    background-color: white;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color: $yellow;
+        border-color: $yellow;
+        color: white !important;
+    }
+}
