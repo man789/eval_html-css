@@ -1,3 +1,12 @@
+// General CSS Rules
+// -----------------
+// General Media queries 
+// => Desktop : Base
+// => Tablet : 767px
+// => Smartphone : 501px
+// -----------------
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,23 +14,27 @@ body{
     font-family: $main-font;
     color: $text-color;
 }
+// --- Color Selection Yellow ---
 ::selection {
     background: $yellow;
     color:white;
 }
+// --- Wrapper Base ---
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
     @media screen and (max-width:767px){
         max-width: 90%;
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         max-width: 100%;
     }
 }
+// --- a tag decoration ---
 a{
     text-decoration: none;
 }
+// --- Header Title ---
 .h1-title{
     text-transform: uppercase;
     font-size: 0.8em;
@@ -32,7 +45,7 @@ a{
         font-weight: 600;
         margin-top: 20px;
         display: block;
-        @media screen and (max-width:480px){
+        @media screen and (max-width:501px){
             font-size: 3em;
         }
     }
@@ -43,6 +56,7 @@ a{
     font-weight: 600;
     text-align: center;
 }
+// --- Section Title ---
 .h2-title{
     font-size: 2em;
     font-weight: 600;
@@ -60,15 +74,14 @@ a{
         margin: 0 auto;
         line-height: 24px;
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         margin-bottom: 15%;
     }
 }
-
-// Space between section 
+// --- Section Space Between ---
 section{
     padding: 5% 0;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         padding: 10%;
     }
 }

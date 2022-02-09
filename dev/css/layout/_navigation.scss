@@ -1,3 +1,4 @@
+// --- Container for Full Naviguation Bloc ---
 .nav{
     position: fixed;
     top: 0;
@@ -7,7 +8,7 @@
         color: white;
     }
 }
-
+// --- Top Nav section ---
 .nav-socials{
     display: flex;
     a{
@@ -25,7 +26,7 @@
         margin-right: auto;
     }
 }
-
+// --- Bottom Nav Section ---
 .main-nav{
     display: flex;
     align-items: center;
@@ -43,10 +44,11 @@
         margin-left: 1%;
     }
 }
+// --- Responsive Menu On Desktop ---
 .nav-link{
     display: none;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:501px){
     .main-nav{
         a:first-child{
             padding-top: 2%;
@@ -56,6 +58,7 @@
             display: none;
         }
     }
+    // --- Responsive Menu Styles ---
     .nav-link{
         display: flex;
         position: fixed;
@@ -107,7 +110,16 @@
         background:#fff;
         margin:2px 0;
     }
+    // --- Active Class JS ---
     .active {
         left: 0;
+    }
+}
+// --- Sticky Class JS ---
+.sticky {
+    background-color: rgba(49, 49, 49, .7);
+    transition: .3s all ease-in-out;
+    .main-nav{
+        background-color: rgba(49, 49, 49, .8);
     }
 }

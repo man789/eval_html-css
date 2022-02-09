@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 5%;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         grid-template-columns: repeat(1, 1fr);
         padding: 0 2%;
     }
@@ -55,7 +55,6 @@
         background: url('../img/d3.jpg') center/cover;
     }
 }
-
 .prices{
     background: url('../img/price-bg.png') center/cover;
 }
@@ -67,7 +66,7 @@
     @media screen and (max-width:767px){
         gap: 1rem;
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
@@ -108,13 +107,12 @@
         }
     }
 }
-
 .issues-box{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: 5%;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -157,10 +155,9 @@
     height: 100%;
     display: block;
 }
-
 .testi{
     background-color: $grey-section;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         padding: 0;
         .h2-title{
             padding: 10% 10% 0 10%;
@@ -175,7 +172,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 5%;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         grid-template-columns: repeat(1, 1fr);
         > div:nth-of-type(1){
             margin-bottom: 10%;
@@ -234,14 +231,13 @@
 .yellow-star{
     color: $yellow;
 }
-
 .ask{
     display: flex;
     flex-wrap: nowrap;
     height: 60vh;
     padding: 0;
     height: fit-content;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         flex-wrap: wrap;
         height: 100%;
     }
@@ -252,12 +248,12 @@
         @media screen and (max-width:767px){
             padding: 0 0 0 3%;
         }
-        @media screen and (max-width:480px){
+        @media screen and (max-width:501px){
             width: 100%;
         }
         h2{
             text-align: initial;
-            @media screen and (max-width:480px){
+            @media screen and (max-width:501px){
                 text-align: center;
                 display: block;
                 width: 80%;
@@ -272,7 +268,7 @@
             @media screen and (max-width:767px){
                 margin: 0 0 8% 0;
             }
-            @media screen and (max-width:480px){
+            @media screen and (max-width:501px){
                 text-align: center;
                 display: block;
                 width: 90%;
@@ -283,19 +279,18 @@
     div:last-of-type{
         width: 50%;
         background: url('../img/about-img.jpg') center/cover;
-        @media screen and (max-width:480px){
+        @media screen and (max-width:501px){
             width: 100%;
             height: 300px;
         }
     }
 }
-
 .blog-box{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 5%;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         grid-template-columns: repeat(1, 1fr);
         > div:nth-of-type(1), > div:nth-of-type(3){
             display: none;

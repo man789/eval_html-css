@@ -18,7 +18,7 @@
     .wrapper{
         position: relative;
         z-index: 3;
-        @media screen and (max-width:480px){
+        @media screen and (max-width:501px){
             padding: 0 3%;
         }
     }
@@ -29,24 +29,24 @@
         display: block;
         width: 50%;
         margin: 2% 0 2% 0;
-        @media screen and (max-width:480px){
+        @media screen and (max-width:501px){
             width: 100%;
             margin: 5% 0 10% 0;
         }
     }
 }
-
+// --- Header Size Change ---
 .contact-page .header{
     background: url('../img/hero-contact.jpg') center/cover;
     height: 40vh;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         height: 50vh;
     }
 }
 .hotel-page .header{
     background: url('../img/hero-hotels.jpg') center/cover;
     height: 40vh;
-    @media screen and (max-width:480px){
+    @media screen and (max-width:501px){
         height: 50vh;
     }
 }
@@ -55,8 +55,7 @@
     height: 40vh;
     height: 50vh;
 }
-
-
+// --- Breadcrumbs Style ---
 .breadcrumbs{
     display: flex;
     justify-content: center;
