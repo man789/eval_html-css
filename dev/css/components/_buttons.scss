@@ -37,9 +37,23 @@
     font-size: 0.9em;
     padding: 10px 20px;
     cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin-bottom: 10%;
     transition: .3s all ease-in-out;
     &:hover{
         background-color: $yellow;
+    }
+    @media screen and (max-width:480px){
+        display: block;
+        margin: 5% auto;
+        width: 50%;
+        text-align: center;
+    }
+}
+.hotel-page .btn-black{
+    @media screen and (max-width:767px){
+        margin: 0 auto 10%;
     }
 }
 .btn-blog{
@@ -62,6 +76,7 @@
     padding: 5px 15px;
     background-color: $yellow;
     text-transform: uppercase;
+    cursor: pointer;
     transition: .3s all ease-in-out;
     &:hover{
         background-color: white;

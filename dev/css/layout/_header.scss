@@ -18,6 +18,9 @@
     .wrapper{
         position: relative;
         z-index: 3;
+        @media screen and (max-width:480px){
+            padding: 0 3%;
+        }
     }
     p{
         font-size: 0.8em;
@@ -26,20 +29,31 @@
         display: block;
         width: 50%;
         margin: 2% 0 2% 0;
+        @media screen and (max-width:480px){
+            width: 100%;
+            margin: 5% 0 10% 0;
+        }
     }
 }
 
 .contact-page .header{
     background: url('../img/hero-contact.jpg') center/cover;
     height: 40vh;
+    @media screen and (max-width:480px){
+        height: 50vh;
+    }
 }
 .hotel-page .header{
     background: url('../img/hero-hotels.jpg') center/cover;
     height: 40vh;
+    @media screen and (max-width:480px){
+        height: 50vh;
+    }
 }
 .blog-page .header{
     background: url('../img/hero-blog.jpg') center/cover;
     height: 40vh;
+    height: 50vh;
 }
 
 

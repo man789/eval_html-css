@@ -1,10 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: $main-font;
     color: $text-color;
 }
+::selection {
+    background: $yellow;
+    color:white;
+}
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
+    @media screen and (max-width:767px){
+        max-width: 90%;
+    }
+    @media screen and (max-width:480px){
+        max-width: 100%;
+    }
 }
 a{
     text-decoration: none;
@@ -19,6 +32,9 @@ a{
         font-weight: 600;
         margin-top: 20px;
         display: block;
+        @media screen and (max-width:480px){
+            font-size: 3em;
+        }
     }
 }
 .h1-title-secondary{
@@ -38,9 +54,21 @@ a{
     font-weight: 300;
     text-align: center;
     color: $text-color-grey;
+    @media screen and (max-width:767px){
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 24px;
+    }
+    @media screen and (max-width:480px){
+        margin-bottom: 15%;
+    }
 }
 
 // Space between section 
 section{
     padding: 5% 0;
+    @media screen and (max-width:480px){
+        padding: 10%;
+    }
 }

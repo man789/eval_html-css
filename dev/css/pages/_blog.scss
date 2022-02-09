@@ -7,10 +7,19 @@
 .blog-page .main .wrapper{
     display: flex;
     gap: 2rem;
+    @media screen and (max-width:767px){
+        flex-direction: column;
+    }
+    @media screen and (max-width:480px){
+        padding: 0 3%;
+    }
 }
 .blog-content{
     margin: 5% 0;
     width: 70%;
+    @media screen and (max-width:767px){
+        width: 100%;
+    }
     > div:nth-of-type(1){
         img{
             width: 100%;
@@ -18,16 +27,25 @@
     }
     > div:nth-of-type(2){
         display: flex;
+        @media screen and (max-width:480px){
+            flex-direction: column;
+        }
     }
 }
 .blog-link-text{
     width: 25%;
     padding: 3%;
     text-align: right;
+    @media screen and (max-width:480px){
+        width: 100%;
+    }
     > a{
         color: $text-color;
         font-size: 0.9em;
         transition: .3s all ease-in-out;
+        @media screen and (max-width:767px){
+            font-size: 0.7em;
+        }
         &:hover{
             color: $yellow;
         }
@@ -40,6 +58,9 @@
             color: $text-color-grey;
             font-size: 0.9em;
             transition: .3s all ease-in-out;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
             &:hover{
                 color: $yellow;
             }
@@ -52,17 +73,27 @@
 .blog-text{
     width: 75%;
     padding: 3%;
+    @media screen and (max-width:480px){
+        width: 100%;
+    }
     p{
         font-size: 0.9em;
         line-height: 24px;
         font-weight: 300;
         color: $text-color-grey;
+        @media screen and (max-width:767px){
+            font-size: 0.7em;
+            line-height: 18px;
+        }
     }
     p:first-child{
         font-size: 1.5em;
         font-weight: 600;
         color: $text-color;
         margin-top: 0;
+        @media screen and (max-width:767px){
+            font-size: 1.3em;
+        }
     }
 }
 .blog-text-bg-white{
@@ -72,6 +103,10 @@
     line-height: 24px;
     font-weight: 300;
     color: $text-color-grey;
+    @media screen and (max-width:767px){
+        font-size: 0.7em;
+        line-height: 18px;
+    }
 }
 .blog-img-block{
     margin-top: 5%;
@@ -86,6 +121,10 @@
     line-height: 22px;
     font-weight: 300;
     color: $text-color-grey;
+    @media screen and (max-width:767px){
+        font-size: 0.7em;
+        line-height: 18px;
+    }
 }
 .blog-post{
     display: flex;
@@ -106,12 +145,18 @@
             font-size: 0.9em;
             font-weight: 300;
             color: $text-color-grey;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
         a{
             font-size: 1.2em;
             font-weight: 600;
             color: $text-color;
             transition: .3s all ease-in-out;
+            @media screen and (max-width:767px){
+                font-size: 1em;
+            }
             &:hover{
                 color: $yellow;
             }
@@ -152,16 +197,26 @@
     }
     div:nth-of-type(2){
         width: 70%;
+        @media screen and (max-width:767px){
+            margin-left: 5%;
+            width: 60%;
+        }
         p:nth-of-type(1){
             margin: 0;
             font-size: 1.1em;
             font-weight: 600;
             color: $text-color;
+            @media screen and (max-width:767px){
+                font-size: 0.9em;
+            }
         }
         p:nth-of-type(2){
             font-size: 0.9em;
             font-weight: 300;
             color: $text-color-grey;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
         p:nth-of-type(3){
             font-weight: 300;
@@ -189,6 +244,9 @@
         font-weight: 600;
         font-size: 1.1em;
         margin-bottom: 5%;
+        @media screen and (max-width:767px){
+            font-size: 0.9em;
+        }
     }
 }
 .blog-form-content{
@@ -223,6 +281,9 @@
             color: lightgray;
             font-size: 0.9em;
             border: none;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
         button{
             cursor: pointer;
@@ -236,6 +297,9 @@
     padding: 3%;
     width: 30%;
     height: fit-content;
+    @media screen and (max-width:767px){
+        width: 100%;
+    }
     a{
         color: $text-color;
         transition: .3s all ease-in-out;
@@ -283,11 +347,18 @@
     > p:nth-of-type(1){
         font-weight: 600;
         font-size: 1.1em;
+        @media screen and (max-width:767px){
+            font-size: 0.9em;
+        }
     }
     > p:nth-of-type(2), > p:nth-of-type(3){
         font-weight: 300;
         font-size: 0.9em;
         line-height: 24px;
+        @media screen and (max-width:767px){
+            font-size: 0.7em;
+            line-height: 18px;
+        }
     }
     > div:nth-of-type(2){
         a{
@@ -300,8 +371,14 @@
     text-align: center;
     color: white;
     font-size: 1.3em;
+    @media screen and (max-width:767px){
+        font-size: 1.1em;
+    }
     p{
         padding: 5% 0;
+        @media screen and (max-width:767px){
+            padding: 2% 0;
+        }
     }
 }
 .aside-post1{
@@ -310,6 +387,9 @@
     margin-bottom: 10px;
     div:nth-of-type(1){
         width: 30%;
+        @media screen and (max-width:767px){
+            width: inherit;
+        }
         img{
             width: 100%;
         }
@@ -320,11 +400,17 @@
             font-size: 0.8em;
             font-weight: 600;
             margin-left: 10px;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
         p{
             font-size: 0.8em;
             font-weight: 300;
             margin-left: 10px;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
     }
 }
@@ -352,11 +438,17 @@
                 font-weight: 300;
                 font-size: 0.9em;
                 color: $text-color;
+                @media screen and (max-width:767px){
+                    font-size: 0.7em;
+                }
             }
             span{
                 font-weight: 300;
                 font-size: 0.9em;
                 color: $text-color;
+                @media screen and (max-width:767px){
+                    font-size: 0.7em;
+                }
             }
         }
     }
@@ -367,6 +459,10 @@
         font-size: 0.9em;
         line-height: 24px;
         text-align: center;
+        @media screen and (max-width:767px){
+            font-size: 0.7em;
+            line-height: 18px;
+        }
     }
 }
 .aside-mail-box{
@@ -390,6 +486,9 @@
             background-color: $yellow;
             cursor: pointer;
             font-size: 0.8em;
+            @media screen and (max-width:767px){
+                font-size: 0.7em;
+            }
         }
     }
 }
